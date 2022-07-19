@@ -2,42 +2,39 @@
 <html lang="pl">
 
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <!--HEADER-->
 
-<!--HEADER-->
-
-    <header class="header">
-        <div class="container">
-            <div class="menu-style">
-                <h2 class="header-logo">
-                    <a class="header-logo-link" href="index.html" target="_self"><span class="web-blue-text">Web</span>Studio</a>
-                </h2>
-                <nav class="header-nav">    
-                    <ul class="nav-list">
-                        <li class="nav-list-menu">
-                            <a class="header-nav-link" href="index.html">Agencja</a>
-                        </li>
-                        <li class="nav-list-menu">
-                            <a class="header-nav-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="nav-list-menu">
-                            <a class="header-nav-link" href="#">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-contact">
+    <header class="header-background">
+        <div class="container container-nav">
+            <h2 class="header-logo">
+                <a class="header-logo-link" href="index.html" target="_self"><span class="web-header-logo-link">Web</span>Studio</a>
+            </h2>
+            <nav class="header-nav">    
+                <ul class="nav-list">
+                    <li>
+                        <a class="header-nav-link" href="index.html">Agencja</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="portfolio.html" target="_self">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contact-background">
                 <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 <a class="header-phone" href="tel:+48111111111"> +48 111 111 111</a>
             </div>
@@ -49,14 +46,12 @@
     <main>
         <section class="solution-section">
             <div class="container">
-                <div class="solution-section-container">
-                    <h1 class="solution-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                    <button class="button-solution-section" type="button">Zamów usługę</button>
-                </div>
+                <h1 class="solution-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+                <button class="button-solution click" type="button">Zamów usługę</button>
             </div>
         </section>
         <div class="container">
-            <section class="service-list-section">
+            <section class="section">
                 <ul class="service-list">
                     <li class="service-list-item">
                         <h4 class="service-header">LOREM IPSUM</h4>
@@ -76,117 +71,116 @@
                     <li class="service-list-item">
                         <h4 class="service-header">LOREM IPSUM</h4>
                         <p class="service-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolore non, veniam, officia magni blanditiis, </p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolore non, veniam, officia magni blanditiis </p>
                     </li>
                 </ul>
+                   
+                <div class="container">
+                    <h2 class="specialize section-header">Czym się zajmujemy</h2>
+                    <ul class="specialize-list">
+                        <li>
+                            <img 
+                            class="img-size"
+                            src="./images/img-5.jpg"
+                            alt="programowanie strony"
+                            width="370"
+                            height="294"/>
+                        </li>
+                        <li>
+                            <img 
+                            class="img-size"
+                            src="./images/img-2.jpg"
+                            alt="sprawdzanie na innych urządzeniach"
+                            width="370"
+                            height="294"/>
+                        </li>
+                        <li>
+                            <img 
+                            class="img-size"
+                            src="./images/img-6.jpg"
+                            alt="sprawdzanie kolorów"
+                            width="370"
+                            height="294"/>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
-        
-        <section class="specialize-section">
-            <div class="container">
-                <h2 class="specialize-section-header">Czym się zajmujemy</h2>
-                <ul class="specialize-list">
-                    <li class="list-item">
-                        <img 
-                        class="img-size"
-                        src="./images/img-5.jpg"
-                        alt="programowanie strony"
-                        width="370"
-                        height="294"/>
-                    </li>
-                    <li class="list-item">
-                        <img 
-                        class="img-size"
-                        src="./images/img-2.jpg"
-                        alt="sprawdzanie na innych urządzeniach"
-                        width="370"
-                        height="294"/>
-                    </li>
-                    <li class="list-item">
-                        <img 
-                        class="img-size"
-                        src="./images/img-6.jpg"
-                        alt="sprawdzanie kolorów"
-                        width="370"
-                        height="294"/>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
        <!--Nasz zespół-->
-
-        <section class="team-section">
+        <div class="team-background">
             <div class="container">
-                <h2 class="team-section-header">Nasz zespół</h2>
-                <ul class="team-list">
-                    <li class="team-list-item">
-                        <figure>
-                            <img class="team-img"
-                            src="./images/img.jpg" 
-                            alt="team-product-designer" 
-                            width="270" 
-                            height="260" />
-                            <figcaption class="team-name">
-                                <h4 class="team-name-header">John Doe</h4>
-                                <p class="team-name-description">Product Designer</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="team-list-item">
-                        <figure>
-                            <img class="team-img"
-                            src="./images/img-1.jpg"  
-                            alt="Kobieta - Programista Frontendu"
-                            width="270" 
-                            height="260" />
-                            <figcaption class="team-name">
-                                <h4 class="team-name-header">John Doe</h4>
-                                <p class="team-name-description">FrontEnd Developer</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="team-list-item">
-                        <figure>
-                            <img class="team-img"
-                            src="./images/img-3.jpg"  
-                            alt="John Doe - Marketingowiec"
-                            width="270" 
-                            height="260"/>
-                            <figcaption class="team-name">
-                                <h4 class="team-name-header">John Doe</h4>
-                                <p class="team-name-description">Marketing</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="team-list-item">
-                        <figure>
-                            <img class="team-img"
-                            src="./images/img-4.jpg"  
-                            alt="John Doe - Designer UI"
-                            width="270" 
-                            height="260"/>
-                            <figcaption class="team-name">
-                                <h4 class="team-name-header">John Doe</h4>
-                                <p class="team-name-description">UI Designer</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <section class="section">
+                    <h2 class="team section-header">Nasz zespół</h2>
+                    <ul class="team-list">
+                        <li>
+                            <figure>
+                                <img class="team-img"
+                                src="./images/img.jpg" 
+                                alt="team-product-designer" 
+                                width="270" 
+                                height="260" />
+                                <figcaption class="team-block">
+                                    <h4 class="team-name-header">John Doe</h4>
+                                    <p class="team-name-description">Product Designer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="team-img"
+                                src="./images/img-1.jpg"  
+                                alt="Kobieta - Programista Frontendu"
+                                width="270" 
+                                height="260" />
+                                <figcaption class="team-block">
+                                    <h4 class="team-name-header">John Doe</h4>
+                                    <p class="team-name-description">FrontEnd Developer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="team-img"
+                                src="./images/img-3.jpg"  
+                                alt="John Doe - Marketingowiec"
+                                width="270" 
+                                height="260"/>
+                                <figcaption class="team-block">
+                                    <h4 class="team-name-header">John Doe</h4>
+                                    <p class="team-name-description">Marketing</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img class="team-img"
+                                src="./images/img-4.jpg"  
+                                alt="John Doe - Designer UI"
+                                width="270" 
+                                height="260"/>
+                                <figcaption class="team-block">
+                                    <h4 class="team-name-header">John Doe</h4>
+                                    <p class="team-name-description">UI Designer</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section> 
             </div> 
-        </section>   
+        </div>
     </main>
 
     <!--FOOTER-->
 
     <footer>
-        <div class="footer-container">
-            <h3 class="logo">
-                <a class="footer-logo-link" href="index.html"><span class="web-blue-text">Web</span>Studio</a>
-            </h3>
-            <address class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</address>
-            <a class="footer-contact" href="mailto:info@example.com">info@example.com</a>
-            <a class="footer-contact" href="tel:+48111111111">+48 111 111 111</a>
+        <div class="container">
+            <h2 class="footer-logo footer-properties">
+                <a class="footer-logo-link" href="index.html"><span class="web-footer-logo-link">Web</span><span class="studio-footer-logo-link">Studio</span></a>
+            </h2>
+            <address class="footer-properties">m. Warszawa, Aleje Jerozolimskie 21</address>
+            <a class="footer-contact footer-properties" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-contact footer-properties footer-tel-contact" href="tel:+48111111111">+48 111 111 111</a>
         </div>
     </footer>
 </body>
