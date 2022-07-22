@@ -125,6 +125,8 @@ letter-spacing: 0.02em;
 	background-color: var(--footer-background-color);
 	height: 600px;
 	display: block;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .solution-header {
@@ -167,7 +169,7 @@ letter-spacing: 0.02em;
 	letter-spacing: 0.03em;
 }
 
-.service-list {
+.service-list-lorem {
 	padding-left: 15px;
 	padding-right: 15px;
 	gap: 30px;
@@ -187,8 +189,10 @@ letter-spacing: 0.02em;
 	padding-bottom: 94px;
 }
 
-
-.section-header {
+.specialize {
+	padding-top: 0px;
+}
+.specialize-header {
 	color: var(--button-color);
 	font-weight: 700;
 	font-size: 36px;
