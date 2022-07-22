@@ -123,8 +123,6 @@ letter-spacing: 0.02em;
 
 .container-solution {
 	background-color: var(--footer-background-color);
-	height: 600px;
-	display: block;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -132,14 +130,15 @@ letter-spacing: 0.02em;
 .solution-header {
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 1.37;
+	line-height: 1.36;
 	text-transform: uppercase;
 	color: var(--backgr-color);
 	width: 696px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	padding-top: 200px;
+	vertical-align: top;
+	padding-bottom: 30px;
 	letter-spacing: 0.06em;
 }
 
@@ -236,6 +235,14 @@ letter-spacing: 0.02em;
 .team-list,
 .service-list {
 	list-style: none;
+}
+
+.our-team-header {
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	vertical-align: top;
+	padding-bottom: 50px;
 }
 
 .team-list {
